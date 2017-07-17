@@ -1,0 +1,404 @@
+body{
+    margin: 0 auto;
+    font-size: 18px;
+    overflow: auto;
+
+}
+
+#contenedora{
+
+    width:100%;
+    height:100%;
+    min-width: 1350px;
+    min-height:688px;
+    background-color:#999999;
+}
+
+#cuerpo{
+    width: 100%;
+    //height: 70%;
+    //height:800px;
+    min-width: 1024px;
+    //min-height:537px;
+    min-height:550px;
+    background-color: #FFFFFF;
+    overflow: auto;
+}
+
+#menu{
+    float: left;
+    width: 20%;
+    //height: 80%;
+    min-width: 204px;
+    //min-height:537px;
+    min-height:550px;
+    background-color: #DDDDFF;
+    box-shadow: 0px 7px 5px #888888;
+
+
+}
+
+#fielRegistro {
+    margin-top: 10px;
+    width: 500px;
+}
+fieldset {
+    border-radius: 3px 3px 0 0;
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 900px;
+}
+
+.textLabel {
+    float: left;
+    height: 75px;
+    width: 150px;
+    font-family: Helvetica,Verdana,Times,serif;
+    font-size: 14px;
+   
+}
+
+
+.textBox {
+    float: left;
+    height: 75px;
+    width: 300px;
+}
+
+#logo img {
+    display: inline;
+    float: left;
+}
+img {
+    border: 0px none;
+}
+#logo span.header1 {
+    float: left;
+    display: inline;
+    top: 0px;
+    line-height: 0.8em;
+    font-size: 0.9em;
+    padding-top: 45px;
+}
+#logo span {
+    padding-left: 2px;
+}
+.header1 {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+#subtitulo{
+    font-size: 0.6em;
+}
+.cabecMenu{
+    width: 130px;
+    min-width: 130px;
+    background-color: #3399FF;
+    color: #ecf4ff;
+    padding: 5px;
+    padding-left: 25px;
+    margin-top: 25px;
+}
+
+#contenido{
+    float:right;
+    width: 79%;
+    //height: 80%;
+    min-width: 819px;
+    min-height:537px;
+    background-color: #DDDDFF;
+    box-shadow: -7px 7px 10px #888888;
+}
+#textoCentral{
+	margin:50px;
+}
+
+#cabecera{
+    width: 100%;
+    height: 20%;
+    min-width: 1024px;
+    min-height: 254px;
+    background-color: #5959E0;
+}
+
+#pie{
+
+    width: 100%;
+    height: 10%;
+    min-width: 1024px;
+    min-height: 77px;
+    background-color: #9AA4FF;;
+
+}
+#pie p{
+
+   font-size: 0.8em;
+}
+#loguearse{
+    float:right;
+    //width: 10%;
+    //height: 50%;
+    min-width: 180px;
+    min-height: 40px;
+    background-color: #9AA4FF;
+    margin: 0 auto;
+
+}
+#loguearse *{
+    display: inline;
+    text-decoration: none;
+}
+
+
+ul li {
+    background-color: #75BFF4;
+    color: #FFFFFF;
+    list-style: none outside none;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+ul.modRestaurante li{
+	color: #000000;
+
+}
+
+ul li:hover, ul li:active {
+    background-color: #1674B7;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.tg  {border-collapse:collapse;border-spacing:0;margin: 50px;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-5mgg{font-weight:bold;background-color:#c0c0c0;vertical-align:top}
+
+.tipoLabel{
+	 display:inline;
+}
+.desplegable{
+
+	position:absolute;
+	z-index:2;
+	background-color:#75BFF4;
+	width:170px;
+	padding:20px;
+	display:none;
+}
+
+.paginaActual{
+	font-weight: bold;color:black;
+}
+
+#map {
+        height: 100%;
+      }
+
+
+Highcharts.theme = {
+   colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
+      '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
+   chart: {
+      backgroundColor: {
+         linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+         stops: [
+            [0, '#2a2a2b'],
+            [1, '#3e3e40']
+         ]
+      },
+      style: {
+         fontFamily: '\'Unica One\', sans-serif'
+      },
+      plotBorderColor: '#606063'
+   },
+   title: {
+      style: {
+         color: '#E0E0E3',
+         textTransform: 'uppercase',
+         fontSize: '20px'
+      }
+   },
+   subtitle: {
+      style: {
+         color: '#E0E0E3',
+         textTransform: 'uppercase'
+      }
+   },
+   xAxis: {
+      gridLineColor: '#707073',
+      labels: {
+         style: {
+            color: '#E0E0E3'
+         }
+      },
+      lineColor: '#707073',
+      minorGridLineColor: '#505053',
+      tickColor: '#707073',
+      title: {
+         style: {
+            color: '#A0A0A3'
+
+         }
+      }
+   },
+   yAxis: {
+      gridLineColor: '#707073',
+      labels: {
+         style: {
+            color: '#E0E0E3'
+         }
+      },
+      lineColor: '#707073',
+      minorGridLineColor: '#505053',
+      tickColor: '#707073',
+      tickWidth: 1,
+      title: {
+         style: {
+            color: '#A0A0A3'
+         }
+      }
+   },
+   tooltip: {
+      backgroundColor: 'rgba(0, 0, 0, 0.85)',
+      style: {
+         color: '#F0F0F0'
+      }
+   },
+   plotOptions: {
+      series: {
+         dataLabels: {
+            color: '#B0B0B3'
+         },
+         marker: {
+            lineColor: '#333'
+         }
+      },
+      boxplot: {
+         fillColor: '#505053'
+      },
+      candlestick: {
+         lineColor: 'white'
+      },
+      errorbar: {
+         color: 'white'
+      }
+   },
+   legend: {
+      itemStyle: {
+         color: '#E0E0E3'
+      },
+      itemHoverStyle: {
+         color: '#FFF'
+      },
+      itemHiddenStyle: {
+         color: '#606063'
+      }
+   },
+   credits: {
+      style: {
+         color: '#666'
+      }
+   },
+   labels: {
+      style: {
+         color: '#707073'
+      }
+   },
+
+   drilldown: {
+      activeAxisLabelStyle: {
+         color: '#F0F0F3'
+      },
+      activeDataLabelStyle: {
+         color: '#F0F0F3'
+      }
+   },
+
+   navigation: {
+      buttonOptions: {
+         symbolStroke: '#DDDDDD',
+         theme: {
+            fill: '#505053'
+         }
+      }
+   },
+
+   // scroll charts
+   rangeSelector: {
+      buttonTheme: {
+         fill: '#505053',
+         stroke: '#000000',
+         style: {
+            color: '#CCC'
+         },
+         states: {
+            hover: {
+               fill: '#707073',
+               stroke: '#000000',
+               style: {
+                  color: 'white'
+               }
+            },
+            select: {
+               fill: '#000003',
+               stroke: '#000000',
+               style: {
+                  color: 'white'
+               }
+            }
+         }
+      },
+      inputBoxBorderColor: '#505053',
+      inputStyle: {
+         backgroundColor: '#333',
+         color: 'silver'
+      },
+      labelStyle: {
+         color: 'silver'
+      }
+   },
+
+   navigator: {
+      handles: {
+         backgroundColor: '#666',
+         borderColor: '#AAA'
+      },
+      outlineColor: '#CCC',
+      maskFill: 'rgba(255,255,255,0.1)',
+      series: {
+         color: '#7798BF',
+         lineColor: '#A6C7ED'
+      },
+      xAxis: {
+         gridLineColor: '#505053'
+      }
+   },
+
+   scrollbar: {
+      barBackgroundColor: '#808083',
+      barBorderColor: '#808083',
+      buttonArrowColor: '#CCC',
+      buttonBackgroundColor: '#606063',
+      buttonBorderColor: '#606063',
+      rifleColor: '#FFF',
+      trackBackgroundColor: '#404043',
+      trackBorderColor: '#404043'
+   },
+
+   // special colors for some of the
+   legendBackgroundColor: 'rgba(0, 0, 0, 0.5)',
+   background2: '#505053',
+   dataLabelsColor: '#B0B0B3',
+   textColor: '#C0C0C0',
+   contrastTextColor: '#F0F0F3',
+   maskColor: 'rgba(255,255,255,0.3)'
+};
+
+
+Highcharts.setOptions(Highcharts.theme);
+

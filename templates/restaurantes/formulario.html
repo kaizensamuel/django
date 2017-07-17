@@ -1,0 +1,31 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+      <title>Practica 7c</title>
+    
+</head>
+
+<body>  
+<form action="/restaurantes/modificar/" method="post" >
+ {% csrf_token %}
+  <ul class="modRestaurante">
+    {{ form.as_ul }}
+  </ul>
+
+<input type="submit" name="submit" value="Modificar Restaurante">
+</form>
+
+
+
+</body>
+</html>
+
+

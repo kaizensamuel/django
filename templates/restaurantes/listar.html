@@ -1,0 +1,69 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+      <title>Practica 7c</title>
+    
+</head>
+
+<body>  
+
+
+
+<table class="tg">
+			<thead class="thead-inverse">
+
+					<tr>
+		  			
+		  			<th>Id</th>
+		   
+                    
+                    <th>Restaurawnte</th>
+                    <th>Tipo de comida</th>
+                    <th>Ciudad</th>
+                    <th>Dirección</th>
+                    <th>CP</th>
+                    <th>Coordenadas</th>
+                    </tr>
+                </thead>
+
+	{% for elemento  in arrayFilas %}
+	
+		<tr>
+			<td ><a href="?id={{elemento.restaurant_id}}">{{elemento.restaurant_id}}</a></td>
+			<td >{{elemento.name}}</td>
+			<td >{{elemento.cuisine}}</td>
+			<td >{{elemento.borough}}</td>
+			<td >{{elemento.address.street}}</td>
+			<td >{{elemento.address.zipcode}}</td>	
+			<td >{{elemento.address.coord}}
+				<div class="desplegable" id="oculto">
+					
+					{% for notas  in elemento.grades %}	
+					
+					Nota: {{notas.score}} <br>Grado: {{notas.grade}} <br>Fecha: {{notas.date}}<br><br>
+					
+					{% endfor %} 
+					
+				</div>
+			</td>
+			
+		
+		</tr>
+		
+	{% endfor %}	  
+
+</table>
+
+
+</body>
+</html>
+
+
